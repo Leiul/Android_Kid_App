@@ -22,7 +22,7 @@ public class login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         getSupportActionBar().hide();
-        getWindow().setStatusBarColor(ContextCompat.getColor(login.this,R.color.new_color1));
+        getWindow().setStatusBarColor(ContextCompat.getColor(login.this,R.color.new_color111));
 
         name_field=findViewById(R.id.reg_name);
         password_field=findViewById(R.id.reg_password);
