@@ -1,5 +1,6 @@
 package com.leul.kidabc;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -39,7 +40,7 @@ public class musics extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
                switch(position){
                    case 0:
-                       videoView.setVideoURI(Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.vd1));
+                       startActivity(new Intent(musics.this,playmusic.class));
                        break;
                    case 1:
                        videoView.setVideoURI(Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.vd2));
